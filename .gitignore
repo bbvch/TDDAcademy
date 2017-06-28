@@ -1,0 +1,10 @@
+.gradle/
+.idea/
+.vs/
+**/lib/build/
+**/lib/out/
+bin/
+node_modules/
+obj/
+
+*.user

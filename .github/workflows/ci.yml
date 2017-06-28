@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  csharp:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: csharp
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+    - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6
+    - name: Restore
+      run: dotnet restore --locked-mode
+    - name: Build
+      run: dotnet build --no-restore --nologo
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+      continue-on-error: true
+  java:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: java
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Test
+        run: ./gradlew test
+  ts:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ts
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Install pnpm
+        run: npm install --global pnpm@12.12.1
+      - name: Install
+        run: pnpm i --frozen-lockfile
+      - name: Test
+        run: pnpm run test
+        continue-on-error: true
