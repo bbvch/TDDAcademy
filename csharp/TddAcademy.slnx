@@ -3,5 +3,6 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="TddAcademy.Facts/TddAcademy.Facts.csproj" />
+  <Project Path="TddAcademy.Specs/TddAcademy.Specs.csproj" />
   <Project Path="TddAcademy/TddAcademy.csproj" />
 </Solution>
