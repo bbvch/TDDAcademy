@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademyCore", "TddAcademyCore\TddAcademyCore.csproj", "{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy", "TddAcademyCore\TddAcademy.csproj", "{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy.Facts", "TddAcademy.Facts\TddAcademy.Facts.csproj", "{BEC03432-74B2-4F70-8091-0F3201470E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy.Specs", "TddAcademy.Specs\TddAcademy.Specs.csproj", "{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC03432-74B2-4F70-8091-0F3201470E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC03432-74B2-4F70-8091-0F3201470E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC03432-74B2-4F70-8091-0F3201470E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC03432-74B2-4F70-8091-0F3201470E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
