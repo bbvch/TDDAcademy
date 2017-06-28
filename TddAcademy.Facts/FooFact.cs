@@ -1,23 +1,30 @@
-﻿using FluentAssertions;
-using Xunit;
-
-namespace TddAcademy.Facts
+﻿namespace TddAcademy.Tests
 {
-    public class FooFact
+    using FakeItEasy;
+    using FluentAssertions;
+    using Xunit;
+
+    public class FooTest
     {
         private readonly Foo testee;
+        private readonly IBar barFake;
 
-        public FooFact()
+        public FooTest()
         {
-            this.testee = new Foo();
+            this.barFake = A.Fake<IBar>();
+            this.testee = new Foo(this.barFake);
         }
 
         [Fact]
-        public void Foo()
+        public void Say()
         {
-            var result = this.testee.Bar();
+            const string BarReturn = "fake";
+            const string FooReturn = "foo";
+            A.CallTo(() => this.barFake.Say()).Returns(BarReturn);
 
-            result.Should().Be(10);
+            var actual = this.testee.Say();
+
+            actual.Should().Be(FooReturn + BarReturn);
         }
     }
 }
