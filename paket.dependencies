@@ -1,0 +1,12 @@
+source https://www.nuget.org/api/v2
+
+storage: none
+framework: net70
+
+nuget coverlet.collector
+nuget fakeiteasy
+nuget fluentassertions
+nuget Microsoft.NET.Test.Sdk
+nuget System.Collections.Immutable
+nuget xbehave
+nuget xunit.runner.visualstudio
