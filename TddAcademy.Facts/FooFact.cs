@@ -1,9 +1,9 @@
-﻿namespace TddAcademy.Tests
+﻿namespace TddAcademy.Facts
 {
     using FakeItEasy;
     using FluentAssertions;
     using Xunit;
-
+    
     public class FooTest
     {
         private readonly Foo testee;

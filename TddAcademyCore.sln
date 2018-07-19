@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy", "TddAcademyCore\TddAcademy.csproj", "{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{E2B9F4F0-FC59-4132-A66D-20A3554A2DDD}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy.Facts", "TddAcademy.Facts\TddAcademy.Facts.csproj", "{BEC03432-74B2-4F70-8091-0F3201470E0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy", "TddAcademyCore\TddAcademy.csproj", "{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddAcademy.Specs", "TddAcademy.Specs\TddAcademy.Specs.csproj", "{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy.Facts", "TddAcademy.Facts\TddAcademy.Facts.csproj", "{BEC03432-74B2-4F70-8091-0F3201470E0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy.Specs", "TddAcademy.Specs\TddAcademy.Specs.csproj", "{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F94535F-6BFE-467F-8D49-CEBECB9D3708}
 	EndGlobalSection
 EndGlobal

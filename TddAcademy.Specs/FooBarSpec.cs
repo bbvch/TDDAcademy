@@ -1,4 +1,4 @@
-namespace TddAcademy.Spec
+namespace TddAcademy.Specs
 {
     using FluentAssertions;
     using Xbehave;
