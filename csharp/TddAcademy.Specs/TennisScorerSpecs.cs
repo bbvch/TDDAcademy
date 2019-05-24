@@ -1,6 +1,9 @@
-﻿namespace TddAcademy.Specs;
+using LambdaTale.v3;
+using Shouldly;
 
-public class TennisScorerSpecs
+namespace TddAcademy.Specs;
+
+public class TennisScorerSpec
 {
     // todo: implement TennisScorer acceptance test first
 }
