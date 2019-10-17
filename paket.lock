@@ -13,7 +13,7 @@ NUGET
       System.Reflection.Emit (>= 4.3)
       System.Reflection.TypeExtensions (>= 4.3)
       System.Xml.XmlDocument (>= 4.3)
-    FakeItEasy (5.2)
+    FakeItEasy (5.3)
       Castle.Core (>= 4.3.1)
     FluentAssertions (5.9)
       System.Configuration.ConfigurationManager (>= 4.4)
