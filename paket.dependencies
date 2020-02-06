@@ -1,7 +1,7 @@
 source https://www.nuget.org/api/v2
 
 storage: none
-framework: netstandard2.1,netcoreapp3.0
+framework: netstandard2.1,netcoreapp3.1
 
 nuget fakeiteasy
 nuget fluentassertions
