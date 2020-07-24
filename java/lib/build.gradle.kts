@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    // ImmutableList
+    api("com.google.guava:guava:33.1.0-jre")
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
     // and Mockito for faking
