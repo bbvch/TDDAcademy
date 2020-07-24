@@ -2,3 +2,6 @@ fakeiteasy
 fluentassertions
 xbehave
 xunit.runner.visualstudio
+Microsoft.NET.Test.Sdk
+coverlet.collector
+System.Collections.Immutable
