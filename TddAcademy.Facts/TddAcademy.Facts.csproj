@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9</LangVersion>
     <OutputType>Library</OutputType>
   </PropertyGroup>
   <ItemGroup>
