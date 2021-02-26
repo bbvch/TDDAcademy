@@ -3,17 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{E2B9F4F0-FC59-4132-A66D-20A3554A2DDD}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
-		paket.lock = paket.lock
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy", "TddAcademyCore\TddAcademy.csproj", "{7CBD0ACE-A9A7-4AA3-8EB5-4F3763181DB7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy.Facts", "TddAcademy.Facts\TddAcademy.Facts.csproj", "{BEC03432-74B2-4F70-8091-0F3201470E0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TddAcademy.Specs", "TddAcademy.Specs\TddAcademy.Specs.csproj", "{C1F8F6D2-2442-41C0-BE13-0C3BDB82EB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{1A4B8F6B-96AB-4E47-928E-DB334C30766A}"
+ProjectSection(SolutionItems) = preProject
+	paket.dependencies = paket.dependencies
+	paket.lock = paket.lock
+	README.md = README.md
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
