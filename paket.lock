@@ -1,5 +1,5 @@
 STORAGE: NONE
-RESTRICTION: == net6.0
+RESTRICTION: == net7.0
 NUGET
   remote: https://www.nuget.org/api/v2
     Castle.Core (5.1)
@@ -26,8 +26,8 @@ NUGET
     Newtonsoft.Json (13.0.2)
     NuGet.Frameworks (6.4)
     System.Collections.Immutable (7.0)
-      System.Runtime.CompilerServices.Unsafe (>= 6.0)
     System.Configuration.ConfigurationManager (7.0)
+      System.Diagnostics.EventLog (>= 7.0)
       System.Security.Cryptography.ProtectedData (>= 7.0)
       System.Security.Permissions (>= 7.0)
     System.Diagnostics.EventLog (7.0)
@@ -35,7 +35,6 @@ NUGET
       Microsoft.Win32.SystemEvents (>= 7.0)
     System.Reflection.Metadata (7.0)
       System.Collections.Immutable (>= 7.0)
-    System.Runtime.CompilerServices.Unsafe (6.0)
     System.Security.Cryptography.ProtectedData (7.0)
     System.Security.Permissions (7.0)
       System.Windows.Extensions (>= 7.0)
