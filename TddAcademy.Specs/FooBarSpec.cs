@@ -5,18 +5,12 @@ namespace TddAcademy.Specs
 
     public class FooBarSpec
     {
-        private Foo foo;
-
-        [Background]
-        public void Background()
-        {
-            this.foo = new Foo(new Bar());
-        }
+        private readonly Foo foo = new(new Bar());
 
         [Scenario]
         public void Say()
         {
-            string actual = null;
+            string? actual = null;
 
             "When foo says something"
                 .x(() => actual = this.foo.Say());

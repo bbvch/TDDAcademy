@@ -9,8 +9,6 @@ Bootstrap project for extreme fast kickoff. C# .NET Core
 ## Run tests
 
 ```
-dotnet tool restore
-dotnet paket restore
 dotnet test
 ```
 
