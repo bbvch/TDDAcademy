@@ -1,15 +1,14 @@
-namespace TddAcademy
-{
-    public interface IBar
-    {
-        string Say();
-    }
+namespace TddAcademy;
 
-    public class Bar : IBar
+public interface IBar
+{
+    string Say();
+}
+
+public class Bar : IBar
+{
+    public string Say()
     {
-        public string Say()
-        {
-            return "bar";
-        }
+        return "bar";
     }
 }
