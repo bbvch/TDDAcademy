@@ -1,28 +1,21 @@
-namespace TddAcademy.Specs
+using FluentAssertions;
+using LambdaTale;
+
+namespace TddAcademy.Specs;
+
+public class FooBarSpec
 {
-    using FluentAssertions;
-    using Xbehave;
+    private readonly Foo foo = new(new Bar());
 
-    public class FooBarSpec
+    [Scenario]
+    public void Say()
     {
-        private Foo foo;
+        string? actual = null;
 
-        [Background]
-        public void Background()
-        {
-            this.foo = new Foo(new Bar());
-        }
+        "When foo says something"
+            .x(() => actual = foo.Say());
 
-        [Scenario]
-        public void Say()
-        {
-            string actual = null;
-
-            "When foo says something"
-                .x(() => actual = this.foo.Say());
-
-            "Then foo should say 'foobar'"
-                .x(() => actual.Should().Be("foobar"));
-        }
+        "Then foo should say 'foobar'"
+            .x(() => actual.Should().Be("foobar"));
     }
 }

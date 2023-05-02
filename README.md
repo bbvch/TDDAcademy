@@ -8,10 +8,8 @@ Bootstrap project for extreme fast kickoff. C# .NET Core
 
 ## Run tests
 
-```
-dotnet tool restore
-dotnet paket restore
+```shell
 dotnet test
 ```
 
-[![Build status](https://ci.appveyor.com/api/projects/status/hrm954v1lt856erf/branch/master?svg=true)](https://ci.appveyor.com/project/MarcoRavicini/tddacademycore/branch/master)
+[![Build status](https://github.com/bbvch/TDDAcademy/actions/workflows/test.yml/badge.svg)](https://github.com/bbvch/TDDAcademy/actions/workflows/test.yml)
