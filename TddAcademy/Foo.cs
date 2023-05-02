@@ -1,17 +1,16 @@
-﻿namespace TddAcademy
+﻿namespace TddAcademy;
+
+public class Foo : IFoo
 {
-    public class Foo : IFoo
+    private readonly IBar bar;
+
+    public Foo(IBar bar)
     {
-        private readonly IBar bar;
+        this.bar = bar;
+    }
 
-        public Foo(IBar bar)
-        {
-            this.bar = bar;
-        }
-
-        public string Say()
-        {
-            return "foo" + this.bar.Say();
-        }
+    public string Say()
+    {
+        return "foo" + bar.Say();
     }
 }

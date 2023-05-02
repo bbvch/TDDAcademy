@@ -1,7 +1,6 @@
-namespace TddAcademy
+namespace TddAcademy;
+
+public interface IFoo
 {
-    public interface IFoo
-    {
-        string Say();
-    }
+    string Say();
 }
