@@ -1,5 +1,5 @@
 using FluentAssertions;
-using Xbehave;
+using LambdaTale;
 
 namespace TddAcademy.Specs;
 
