@@ -8,7 +8,7 @@ Bootstrap project for extreme fast kickoff. C# .NET Core
 
 ## Run tests
 
-```
+```shell
 dotnet test
 ```
 
